@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot </title>
+
+    <style>
+
+.navbar {
+            text-align: center;
+            width: 100px;
+
+        }
+
+        .a {
+            color: rgb(254, 253, 253);
+            padding: 3px;
+            padding-left: 35px;
+            font-size: 25px;
+            text-decoration: none;
+
+        }
+
+        .nav_image {
+            height: 230px;
+            width: 700px;
+            margin-left: 400px;
+        }
+
+        .navbar_a {
+            width: 1500px;
+            height: 50px;
+            background-color: rgb(254, 119, 1);
+            text-align: left;
+            text-decoration: none;
+
+        }
+
+        
+        .col-foot-12 {
+            width: 1500px;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 8px;
+            border-radius: 6px;
+
+        }
+
+        .col-foot-img {
+            padding-left: 100px;
+            margin-left: 220px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static',filename = 'image/PIET logo with tagline.jpg')}}" class="nav_image">
+        <br>
+        <div class="navbar_a">
+            <a href="/index" class="a">HOME</a>
+        </div>
+    </nav>
+<table >
+    <tr >
+        <th >
+    <div>
+        <img src="{{ url_for('static',filename = 'image/Lovely little robot.gif')}}" style="margin-top:100px;">
+    </div>
+</th>
+<th>
+   
+    <div style="color:black; margin-top: 200px;">
+        
+	     <h2 style="font-size:60px;">Your ChatBot</h2>
+		<br>
+		<h3>Hi! getting bored, Lets talk a little. .</h3>
+        
+	    <form method= "POST">
+		
+            <input type="text" name="message" placeholder="Message" required="required" style="width:280px">
+            <br>
+ 	    <br>
+	    <input type= "submit" value = "Submit" >
+        <p >{{ response1 }}<p><br>
+	    </form>
+            <br>
+    </div>
+</th>
+</tr>
+</table>
+
+<div>
+    <div class="col-foot-12">
+        <hr>
+        <center>
+            <h3 class="section-title" style="text-align: center; font-size: 40px;">Sponsored by</h3>
+        </center>
+        <div class="col-foot-img">
+            <table class="col-foot-img">
+                <tr>
+                    <th> <img style="max-height:80px;" src="{{ url_for('static',filename = 'image/AICTEIdeaLabFooterLogo.png')  }}"></th>
+                    <th> <img style="max-height:80px;" src="{{ url_for('static',filename = 'image/nbanew.png')  }}"></th>
+                </tr>
+            </table>
+
+        </div>
+        <br><br><br><br><br>
+        <div class="fixed-bottom ">
+            <div class="" style="min-height: 40px;">
+                <div style="background-color: rgb(254, 119, 1);">
+                    <marquee style="color:rgb(251, 250, 250); margin-top: 7px;">
+                        <h9>Developed by Department of Computer Engineering, PIET</h9>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
